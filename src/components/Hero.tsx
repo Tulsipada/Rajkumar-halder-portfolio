@@ -83,20 +83,34 @@ const Hero = () => {
                 <Mail className="w-4 h-4 mr-2" />
                 Get In Touch
               </Button>
-              <Button
-                size="lg"
-                className="bg-gradient-primary text-white hover:bg-gradient-to-r hover:from-primary/90 hover:to-primary-glow/90 shadow-hero font-semibold transition-all duration-300"
+              <a
+                href="https://github.com/Rj8930"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
               >
-                <Github className="w-4 h-4 mr-2" />
-                View Projects
-              </Button>
-              <Button
-                size="lg"
-                className="bg-blue-600 hover:bg-blue-700 text-white shadow-hero font-semibold transition-all duration-300"
+                <Button
+                  size="lg"
+                  className="bg-gradient-primary text-white hover:bg-gradient-to-r hover:from-primary/90 hover:to-primary-glow/90 shadow-hero font-semibold transition-all duration-300"
+                >
+                  <Github className="w-4 h-4 mr-2" />
+                  View Projects
+                </Button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rajkumar-halder-499802266/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
               >
-                <Linkedin className="w-4 h-4 mr-2" />
-                LinkedIn
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 text-white shadow-hero font-semibold transition-all duration-300"
+                >
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </Button>
+              </a>
             </div>
           </div>
         </div>

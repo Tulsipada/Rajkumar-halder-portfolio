@@ -33,14 +33,14 @@ const Contact = () => {
       icon: Linkedin,
       title: "LinkedIn",
       description: "Professional network and career updates",
-      href: "#",
+      href: "https://www.linkedin.com/in/rajkumar-halder-499802266/",
       color: "bg-blue-600 hover:bg-blue-700"
     },
     {
       icon: Github,
       title: "GitHub",
       description: "Code repositories and projects",
-      href: "#",
+      href: "https://github.com/Rj8930",
       color: "bg-gray-900 hover:bg-gray-800"
     }
   ];
@@ -101,12 +101,19 @@ const Contact = () => {
                     <h3 className="text-lg font-semibold text-white mb-1">{social.title}</h3>
                     <p className="text-sm text-white/70">{social.description}</p>
                   </div>
-                  <Button
-                    size="sm"
-                    className={`${social.title === 'LinkedIn' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-900 hover:bg-gray-800'} text-white shadow-hero font-semibold transition-all duration-300`}
+                  <a
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block"
                   >
-                    Connect
-                  </Button>
+                    <Button
+                      size="sm"
+                      className={`${social.title === 'LinkedIn' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-900 hover:bg-gray-800'} text-white shadow-hero font-semibold transition-all duration-300`}
+                    >
+                      Connect
+                    </Button>
+                  </a>
                 </div>
               </Card>
             ))}
