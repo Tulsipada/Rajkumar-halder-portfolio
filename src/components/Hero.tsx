@@ -66,7 +66,12 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>rjkumar8930@gmail.com</span>
+                <a 
+                  href="mailto:rjkumar8930@gmail.com"
+                  className="hover:text-yellow-300 transition-colors"
+                >
+                  rjkumar8930@gmail.com
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -76,13 +81,15 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <Button
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90 shadow-hero"
-              >
-                <Mail className="w-4 h-4 mr-2" />
-                Get In Touch
-              </Button>
+              <a href="mailto:rjkumar8930@gmail.com?subject=Hello%20Rajkumar&body=Hi%20Rajkumar,%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you.%0D%0A%0D%0ABest%20regards">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90 shadow-hero"
+                >
+                  <Mail className="w-4 h-4 mr-2" />
+                  Get In Touch
+                </Button>
+              </a>
               <a
                 href="https://github.com/Rj8930"
                 target="_blank"

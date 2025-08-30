@@ -2,8 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Linkedin, Github, MessageCircle } from "lucide-react";
+import { useState } from "react";
+import ScheduleModal from "./ScheduleModal";
 
 const Contact = () => {
+  const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false);
+
   const contactMethods = [
     {
       icon: Mail,
@@ -128,16 +132,19 @@ const Contact = () => {
               or want to discuss research opportunities, I'm always excited to connect with fellow tech enthusiasts.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90 shadow-hero"
-              >
-                <Mail className="w-5 h-5 mr-2" />
-                Send Email
-              </Button>
+              <a href="mailto:rjkumar8930@gmail.com?subject=Hello%20Rajkumar&body=Hi%20Rajkumar,%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you.%0D%0A%0D%0ABest%20regards">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90 shadow-hero"
+                >
+                  <Mail className="w-5 h-5 mr-2" />
+                  Send Email
+                </Button>
+              </a>
               <Button
                 size="lg"
                 className="bg-gradient-primary text-white hover:bg-gradient-to-r hover:from-primary/90 hover:to-primary-glow/90 shadow-hero font-semibold transition-all duration-300"
+                onClick={() => setIsScheduleModalOpen(true)}
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Schedule Call
@@ -146,6 +153,12 @@ const Contact = () => {
           </Card>
         </div>
       </div>
+
+      {/* Schedule Modal */}
+      <ScheduleModal 
+        isOpen={isScheduleModalOpen}
+        onClose={() => setIsScheduleModalOpen(false)}
+      />
     </section>
   );
 };
