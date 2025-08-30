@@ -8,13 +8,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "Rrjkumar8930@gmail.com",
-      href: "mailto:Rrjkumar8930@gmail.com",
+      value: "rjkumar8930@gmail.com",
+      href: "mailto:rjkumar8930@gmail.com",
       description: "Preferred for professional inquiries"
     },
     {
       icon: Phone,
-      title: "Phone", 
+      title: "Phone",
       value: "+91 9382894281",
       href: "tel:+919382894281",
       description: "Available for urgent matters"
@@ -51,7 +51,7 @@ const Contact = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" />
       <div className="absolute -top-1/2 -left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute -bottom-1/2 -right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-white/20 text-white border-white/30">
@@ -67,7 +67,7 @@ const Contact = () => {
           {/* Contact Methods */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {contactMethods.map((method, index) => (
-              <Card 
+              <Card
                 key={index}
                 className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 text-center"
               >
@@ -75,7 +75,7 @@ const Contact = () => {
                   <method.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{method.title}</h3>
-                <a 
+                <a
                   href={method.href}
                   className="text-primary-glow hover:text-white transition-colors block mb-2"
                 >
@@ -89,7 +89,7 @@ const Contact = () => {
           {/* Social Links */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {socialLinks.map((social, index) => (
-              <Card 
+              <Card
                 key={index}
                 className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300"
               >
@@ -101,8 +101,8 @@ const Contact = () => {
                     <h3 className="text-lg font-semibold text-white mb-1">{social.title}</h3>
                     <p className="text-sm text-white/70">{social.description}</p>
                   </div>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     size="sm"
                     className="border-white/30 text-white hover:bg-white/10"
                   >
@@ -118,20 +118,20 @@ const Contact = () => {
             <MessageCircle className="w-16 h-16 text-primary-glow mx-auto mb-6" />
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Start a Conversation?</h3>
             <p className="text-white/90 mb-8 max-w-2xl mx-auto">
-              Whether you're looking for a collaborator on ML projects, need expertise in 5G networks, 
+              Whether you're looking for a collaborator on ML projects, need expertise in 5G networks,
               or want to discuss research opportunities, I'm always excited to connect with fellow tech enthusiasts.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button 
+              <Button
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90 shadow-hero"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Send Email
               </Button>
-              <Button 
+              <Button
                 variant="outline"
-                size="lg" 
+                size="lg"
                 className="border-white/30 text-white hover:bg-white/10"
               >
                 <Phone className="w-5 h-5 mr-2" />

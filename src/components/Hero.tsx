@@ -10,15 +10,15 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
       <div className="absolute -top-1/2 -right-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute -bottom-1/2 -left-1/2 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Profile Image */}
           <div className="relative">
             <div className="w-64 h-64 rounded-full bg-gradient-card shadow-hero overflow-hidden border-4 border-white/20">
-              <img 
-                src={rajkumarAvatar} 
-                alt="Rajkumar Halder" 
+              <img
+                src={rajkumarAvatar}
+                alt="Rajkumar Halder"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -32,13 +32,13 @@ const Hero = () => {
             <Badge className="mb-4 bg-white/20 text-white border-white/30">
               Software Engineer & ML Specialist
             </Badge>
-            
+
             <h1 className="text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
               Rajkumar Halder
             </h1>
-            
+
             <p className="text-xl lg:text-2xl mb-8 text-white/90 max-w-2xl">
-              Master's student at Jadavpur University researching <span className="text-yellow-300 font-semibold">5G Networks</span> and 
+              Master's student at Jadavpur University researching <span className="text-yellow-300 font-semibold">5G Networks</span> and
               building innovative solutions with <span className="text-yellow-300 font-semibold">Machine Learning</span> & <span className="text-yellow-300 font-semibold">Deep Learning</span>
             </p>
 
@@ -66,7 +66,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>Rrjkumar8930@gmail.com</span>
+                <span>rjkumar8930@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -76,23 +76,23 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-primary hover:bg-white/90 shadow-hero"
               >
                 <Mail className="w-4 h-4 mr-2" />
                 Get In Touch
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-2 border-white text-white hover:bg-white hover:text-black font-semibold transition-all duration-300"
               >
                 <Github className="w-4 h-4 mr-2" />
                 View Projects
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-2 border-white text-white hover:bg-white hover:text-black font-semibold transition-all duration-300"
               >
