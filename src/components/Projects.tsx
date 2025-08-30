@@ -16,7 +16,8 @@ const Projects = () => {
         "Bidirectional GRU layers with embedding and pooling",
         "Real-time sentiment classification system"
       ],
-      category: "Machine Learning"
+      category: "Machine Learning",
+      githubUrl: "https://github.com/Rj8930/Sentiment-Analysis-of-COVID-19-Related-Tweets-using-NLP-and-Deep-Learning"
     },
     {
       title: "Breast Cancer Detection Model",
@@ -29,7 +30,8 @@ const Projects = () => {
         "ROC AUV evaluation and performance metrics",
         "Clinical presentation with visualizations"
       ],
-      category: "Healthcare ML"
+      category: "Healthcare ML",
+      githubUrl: "https://github.com/Rj8930/Breast-Cancer-Detection-Model"
     },
     {
       title: "5G Handover Management Research",
@@ -123,13 +125,31 @@ const Projects = () => {
 
               {/* Actions */}
               <div className="flex gap-2">
-                <Button 
-                  size="sm" 
-                  className="flex-1 bg-gradient-primary text-primary-foreground hover:shadow-glow"
-                >
-                  <Github className="w-4 h-4 mr-2" />
-                  Code
-                </Button>
+                {project.githubUrl ? (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
+                  >
+                    <Button 
+                      size="sm" 
+                      className="w-full bg-gradient-primary text-primary-foreground hover:shadow-glow"
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      View Project
+                    </Button>
+                  </a>
+                ) : (
+                  <Button 
+                    size="sm" 
+                    className="flex-1 bg-gradient-primary text-primary-foreground hover:shadow-glow"
+                    disabled
+                  >
+                    <Github className="w-4 h-4 mr-2" />
+                    Code
+                  </Button>
+                )}
                 <Button 
                   variant="outline" 
                   size="sm"
@@ -148,13 +168,19 @@ const Projects = () => {
           <p className="text-muted-foreground mb-6">
             Interested in collaborating or learning more about my work?
           </p>
-          <Button 
-            size="lg"
-            className="bg-gradient-hero text-primary-foreground shadow-hero hover:shadow-glow"
+          <a
+            href="https://github.com/Rj8930?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            View All Projects
-            <ExternalLink className="w-4 h-4 ml-2" />
-          </Button>
+            <Button 
+              size="lg"
+              className="bg-gradient-hero text-primary-foreground shadow-hero hover:shadow-glow"
+            >
+              View All Projects
+              <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

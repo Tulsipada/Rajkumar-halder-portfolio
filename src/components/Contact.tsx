@@ -23,7 +23,7 @@ const Contact = () => {
       icon: MapPin,
       title: "Location",
       value: "Kolkata, India",
-      href: "#",
+      href: "https://www.google.com/maps/place/Desbandhu+Rd,+Kolkata,+West+Bengal+700032/@22.4874639,88.3706735,17z/data=!3m1!4b1!4m7!3m6!1s0x3a027116dd4d2813:0xd6772555e848ddbb!8m2!3d22.487459!4d88.3755444!15sCg9kZXNoYmFuZGh1IHJvYWSSAQVyb3V0ZeABAA!16s%2Fg%2F1tg_7x5_?entry=tts&g_ep=EgoyMDI0MTEyNC4xIPu8ASoASAFQAw%3D%3D",
       description: "Open to remote opportunities"
     }
   ];
@@ -77,11 +77,11 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-white mb-2">{method.title}</h3>
                 <a
                   href={method.href}
-                  className="text-primary-glow hover:text-white transition-colors block mb-2"
+                  className="text-yellow-300 hover:text-white transition-colors block mb-2 font-medium"
                 >
                   {method.value}
                 </a>
-                <p className="text-sm text-white/70">{method.description}</p>
+                <p className="text-sm text-white/90 font-medium">{method.description}</p>
               </Card>
             ))}
           </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-white mb-1">{social.title}</h3>
-                    <p className="text-sm text-white/70">{social.description}</p>
+                    <p className="text-sm text-white/90 font-medium">{social.description}</p>
                   </div>
                   <a
                     href={social.href}
@@ -123,7 +123,7 @@ const Contact = () => {
           <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-center">
             <MessageCircle className="w-16 h-16 text-primary-glow mx-auto mb-6" />
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Start a Conversation?</h3>
-            <p className="text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-white font-medium mb-8 max-w-2xl mx-auto">
               Whether you're looking for a collaborator on ML projects, need expertise in 5G networks,
               or want to discuss research opportunities, I'm always excited to connect with fellow tech enthusiasts.
             </p>
