@@ -84,17 +84,15 @@ const Hero = () => {
                 Get In Touch
               </Button>
               <Button
-                variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-black font-semibold transition-all duration-300"
+                className="bg-gradient-primary text-white hover:bg-gradient-to-r hover:from-primary/90 hover:to-primary-glow/90 shadow-hero font-semibold transition-all duration-300"
               >
                 <Github className="w-4 h-4 mr-2" />
                 View Projects
               </Button>
               <Button
-                variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-black font-semibold transition-all duration-300"
+                className="bg-blue-600 hover:bg-blue-700 text-white shadow-hero font-semibold transition-all duration-300"
               >
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn

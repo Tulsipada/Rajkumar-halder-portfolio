@@ -15,7 +15,7 @@ const Education = () => {
         "Teaching Assistant for Data Structures and Algorithms Laboratory",
         "Placement Coordinator for Information Technology Department (2024-25)"
       ],
-      current: true
+      current: false
     },
     {
       institution: "Dumkal Institute of Engineering and Technology",
@@ -58,8 +58,8 @@ const Education = () => {
 
         <div className="space-y-8 max-w-4xl mx-auto">
           {educationData.map((edu, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="p-8 bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 border-border/50"
             >
               <div className="flex flex-col lg:flex-row gap-6">
@@ -111,12 +111,11 @@ const Education = () => {
 
                 {/* CGPA Badge */}
                 <div className="flex lg:flex-col items-center lg:items-end gap-2">
-                  <Badge 
-                    className={`text-lg px-4 py-2 ${
-                      parseFloat(edu.cgpa) >= 9 
-                        ? 'bg-gradient-accent text-accent-foreground' 
-                        : 'bg-gradient-primary text-primary-foreground'
-                    }`}
+                  <Badge
+                    className={`text-lg px-4 py-2 ${parseFloat(edu.cgpa) >= 9
+                      ? 'bg-gradient-accent text-accent-foreground'
+                      : 'bg-gradient-primary text-primary-foreground'
+                      }`}
                   >
                     {edu.cgpa}
                   </Badge>
