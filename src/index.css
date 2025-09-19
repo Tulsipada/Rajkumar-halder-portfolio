@@ -118,5 +118,12 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+
+  background-image: url('/assets/watermark.png');
+  background-repeat: repeat; 
+  background-size: 200px; /* adjust watermark size */
+  opacity: 1;
+}
+
   }
 }
